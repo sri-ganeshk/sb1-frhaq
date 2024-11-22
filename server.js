@@ -6,9 +6,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-app.use(cors({
-  origin: ['http://localhost:5173', 'https://flames-calculator.netlify.app']
-}));
+app.use(cors());
 app.use(express.json());
 
 mongoose.connect('mongodb+srv://1234:2498@cluster0.bdlu1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
