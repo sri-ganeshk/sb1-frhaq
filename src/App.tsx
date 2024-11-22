@@ -9,7 +9,7 @@ interface HistoryItem {
   timestamp: string;
 }
 
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = 'mongodb+srv://1234:2498@cluster0.bdlu1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 function App() {
   const [name1, setName1] = useState('');
